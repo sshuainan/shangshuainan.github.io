@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="wispanh=device-wispanh, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>诺利康</title>
+<link href="css/master.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.1.4.2-min.js"></script>
+<script type="text/javascript" src="js/Calculation.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+
+	//jquery特效制作复选框全选反选取消(无插件)
+	// 全选        
+	$(".allselect").click(function () {
+		
+		if($(this).attr("checked")){
+			$(".gwc_tb2 input[name=newslist]").each(function () {
+				$(this).attr("checked", true);
+			});
+			GetCount();
+		
+		}
+		else
+   		{
+			$(".gwc_tb2 input[name=newslist]").each(function () {
+				if ($(this).attr("checked")) {
+					$(this).attr("checked", false);
+				} else {
+					$(this).attr("checked", true);
+				} 
+			});
+			GetCount();
+    
+   		}
+		
+	});
+
+	//反选
+	$("#invert").click(function () {
+		$(".gwc_tb2 input[name=newslist]").each(function () {
+			if ($(this).attr("checked")) {
+				$(this).attr("checked", false);
+			} else {
+				$(this).attr("checked", true);
+			} 
+		});
+		GetCount();
+	});
+
+	//取消
+	$("#cancel").click(function () {
+		$(".gwc_tb2 input[name=newslist]").each(function () {
+			$(this).attr("checked", false);
+		});
+		GetCount();
+	});
+
+	// 所有复选(:checkbox)框点击事件
+	$(".gwc_tb2 input[name=newslist]").click(function () {
+		if ($(this).attr("checked")) {
+		} else {
+		}
+	});
+
+	// 输出
+	$(".gwc_tb2 input[name=newslist]").click(function () {
+		GetCount();
+	});
+});
+//******************
+function GetCount() {
+	var conts = 0;
+	var aa = 0;
+	$(".gwc_tb2 input[name=newslist]").each(function () {
+		if ($(this).attr("checked")) {
+			for (var i = 0; i < $(this).length; i++) {
+				conts += parseInt($(this).val());
+				aa += 1;
+			}
+		}
+	});
+	$("#shuliang").text(aa);
+	$("#zong1").html((conts).toFixed(2));
+	$("#jz1").css("display", "none");
+	$("#jz2").css("display", "block");
+}
+</script>
+
+</head>
+
+<body>
+<div class="container">
+<div class="nav-header">
+<i><a href="my.html">&#xe602;</a></i>购物车<em><a href="index.html">&#xe603;</a></em>
+</div>
+
+<div class="gwc" style=" margin:auto;">
+
+		   
+	<!---商品加减算总数---->
+	<script type="text/javascript">
+	$(function () {
+		var t = $("#text_box1");
+		$("#add1").click(function () {
+			t.val(parseInt(t.val()) + 1)
+			setTotal(); GetCount();
+		})
+		$("#min1").click(function () {
+			if(t.val()>0){
+				t.val(parseInt(t.val()) - 1)
+				setTotal(); GetCount();
+			}
+		})
+		function setTotal() {
+
+			$("#total1").html((parseInt(t.val()) * 3380).toFixed(2));
+			$("#newslist-1").val(parseInt(t.val()) * 3380);
+		}
+		setTotal();
+	})
+	</script>
+	
+<div class="gwc_tb2">
+  <div class="checkboxFive mot"><input type="checkbox" value="1" name="newslist" id="newslist-1" /><label for="newslist-1"></label></div>
+  <div class="pic"><a href="#"><img src="images/01.png" width="245" height="196" alt=""/></a></div>
+  <div class="txt"><a href="#">珍瘦体脂管理课程</a>
+    <div class="jiage">
+				<p><span>￥</span><label id="total1" class="tot crls"></label></p>
+                <input id="min1" name="" class="input-jia" type="button" value="-" />
+				<input id="text_box1" name="" type="text" value="1" class="input-nbr" />
+				<input id="add1" name="" class="input-jia" type="button" value="+" />
+                
+    </div>
+  </div>
+</div>
+	
+	<!---商品加减算总数---->
+	<script type="text/javascript">
+	$(function () {
+		var t = $("#text_box2");
+		$("#add2").click(function () {
+			t.val(parseInt(t.val()) + 1)
+			setTotal(); GetCount();
+		})
+		$("#min2").click(function () {
+			if(t.val()>0){
+				t.val(parseInt(t.val()) - 1)
+				setTotal(); GetCount();
+			}
+		})
+		function setTotal() {
+
+			$("#total2").html((parseInt(t.val()) * 3380).toFixed(2));
+			$("#newslist-2").val(parseInt(t.val()) * 3380);
+		}
+		setTotal();
+	})
+	</script>
+    <div class="gwc_tb2">
+  <div class="checkboxFive mot"><input type="checkbox" value="1" name="newslist" id="newslist-2" /><label for="newslist-2"></label></div>
+  <div class="pic"><a href="#"><img src="images/01.png" width="245" height="196" alt=""/></a></div>
+  <div class="txt"><a href="#">珍瘦体脂管理课程</a>
+    <div class="jiage">
+				<p><span>￥</span><label id="total2" class="tot crls"></label></p>
+                <input id="min2" name="" class="input-jia" type="button" value="-" />
+				<input id="text_box2" name="" type="text" value="1" class="input-nbr" />
+				<input id="add2" name="" class="input-jia" type="button" value="+" />
+                
+    </div>
+  </div>
+</div>
+
+	
+	<!---总数---->
+	<script type="text/javascript">
+	$(function () {
+		$(".quanxun").click(function () {
+			setTotal();
+			//alert($(lens[0]).text());
+		});
+		function setTotal() {
+			var len = $(".tot");
+			var num = 0;
+			for (var i = 0; i < len.length; i++) {
+				num = parseInt(num) + parseInt($(len[i]).text());
+
+			}
+			//alert(len.length);
+			$("#zong1").text(parseInt(num).toFixed(2));
+			$("#shuliang").text(len.length);
+		}
+		//setTotal();
+	})
+	</script>
+	<div class="gwc_tb3">
+<div class="checkboxFive mots">
+<input id="Checkbox1" type="checkbox"  class="allselect"/><label for="Checkbox1"></label>
+</div>
+已选<label id="shuliang" style="color:#ff5500;font-size:14px; font-weight:bold;">0</label>件
+合计(不含运费):<span>￥</span>
+<span style=" color:#ff5500;"><label id="zong1" style="color:#ff5500;font-size:14px; font-weight:bold;"></label></span>
+<a href="dingdxx.html" class="jiesuan">结算</a>
+
+	</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

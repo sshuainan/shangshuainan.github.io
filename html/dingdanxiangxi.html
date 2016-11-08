@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>诺利康</title>
+<link href="css/master.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.1.4.2-min.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+<div class="nav-header">
+<i><a href="index.html">&#xe602;</a></i>订单详细<em><a href="index.html">&#xe603;</a></em>
+</div>
+<div class="mingxin">
+<div class="box-xx">
+<div class="title"><strong>订单详情</strong><a href="#">确认收货</a></div>
+<div class="zliao">
+<p>订单号：201604052541585545</p>
+<p>交易号：NUOLIK25684552</p>
+<p>订单状态：代发货</p>
+<p>下单时间：2013-04-25 18:35:21</p>
+<p>支付时间：2013-04-25 18:35:21</p>
+<p>商品总金额：￥256</p>
+<p>运费：包邮</p>
+</div>
+</div>
+
+<div class="box-xx">
+<div class="title"><strong>商品信息</strong></div>
+<div class="pic-tupian">
+<img src="images/01.png" width="245" height="196" alt=""/>
+<div class="wzo">
+<p>夏末秋初必须提防咳嗽护理神招必收</p>
+<span>价格：90</span>
+<i>数量：2</i>
+<a href="#" onclick="ShowDiv('MyDiv','fade')">申请退款</a>
+</div>
+</div>
+</div>
+
+<div class="box-xx">
+<div class="title"><strong>收货人信息</strong></div>
+<div class="zliao">
+<p>收货人：欧琼</p>
+<p>手机：18684819997</p>
+<p>收货地址：湖南省长沙市开福区又一村88号伯公大酒店4楼</p>
+<p>物流信息：百世汇通（201254895）<a href="#">点击查询</a></p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="fade" class="black_overlay">
+</div>
+<div id="MyDiv" class="white_content">
+<div class="guanbi">
+<span onclick="CloseDiv('MyDiv','fade')">x</span>
+</div>
+<div class="title">申请退货</div>
+<div class="int"><textarea></textarea></div>
+<div class="anniou"><a href="#" class="yan">提交</a></div>
+</div>
+<script type="text/javascript">
+//弹出隐藏层
+function ShowDiv(show_div,bg_div){
+document.getElementById(show_div).style.display='block';
+document.getElementById(bg_div).style.display='block' ;
+var bgdiv = document.getElementById(bg_div);
+bgdiv.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+$("#"+bg_div).height($(document).height());
+};
+//关闭弹出层
+function CloseDiv(show_div,bg_div)
+{
+document.getElementById(show_div).style.display='none';
+document.getElementById(bg_div).style.display='none';
+};
+</script>
+</body>
+</html>

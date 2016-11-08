@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>诺利康</title>
+<link href="css/master.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/jscript">
+$(function(){
+	var $qqServer = $('.qqserver');
+	var $qqserverFold = $('.qqserver_fold');
+	var $qqserverUnfold = $('.qqserver_arrow');
+	$qqserverFold.click(function(){
+		$qqserverFold.hide();
+		$qqServer.addClass('unfold');
+	});
+	$qqserverUnfold.click(function(){
+		$qqServer.removeClass('unfold');
+		$qqserverFold.show();
+	});
+	//窗体宽度小鱼1024像素时不显示客服QQ
+	function resizeQQserver(){
+		$qqServer[document.documentElement.clientWidth < 0 ? 'hide':'show']();
+	}
+	$(window).bind("load resize",function(){
+		resizeQQserver();
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+<div class="nav-header">
+<i><a href="index.html">&#xe602;</a></i>积分商城<em><a href="index.html">&#xe603;</a></em>
+</div>
+
+<div class="slider">
+	  <ul>
+	    <li><a href="#" target="_blank"><img src="images/1.jpg" alt="诺利康"></a></li>
+		<li><a href="#" target="_blank"><img src="images/2.jpg" alt="诺利康"></a></li>
+		<li><a href="#" target="_blank"><img src="images/3.jpg" alt="JS诺利康"></a></li>
+	  </ul>
+</div>
+<script type="text/javascript" src="js/yxMobileSlider.js"></script>
+<script>
+    $(".slider").yxMobileSlider({width:640,height:320,during:10000})
+</script>
+<div class="mobox">
+<ul>
+<li>
+  <div class="pic"><img src="images/01.png" width="245" height="196" alt=""/></div>
+  <div class="txt"><p><i class="icon-jifen"></i>积分500<a href="#">兑换</a></p><span>诺康薏仁紫苏</span></div>
+</li>
+<li>
+  <div class="pic"><img src="images/02.png" width="245" height="196" alt=""/></div>
+  <div class="txt"><p><i class="icon-jifen"></i>积分500<a href="#">兑换</a></p><span>益生菌</span></div>
+</li>
+<li>
+  <div class="pic"><img src="images/03.png" width="245" height="196" alt=""/></div>
+  <div class="txt"><p><i class="icon-jifen"></i>积分500<a href="#">兑换</a></p><span>柯氏发酵冬虫夏草胶囊</span></div>
+</li>
+<li>
+  <div class="pic"><img src="images/04.png" width="245" height="196" alt=""/></div>
+  <div class="txt"><p><i class="icon-jifen"></i>积分500<a href="#">兑换</a></p><span>均衡营养特膳</span></div>
+</li>
+</ul>
+</div>
+</div>
+<div class="qqserver">
+  <div class="qqserver_fold">
+    <div></div>
+  </div>
+  <div class="qqserver-body" style="display: block;">
+    <div class="qqserver-header">
+      <div></div>
+      <span class="qqserver_arrow"></span> </div>
+    <ul>
+      <li> <a href="tel:18684819997">
+        <div>客服咨询</div>
+        <span>琳琳</span> </a> </li>
+      <li> <a href="tel:18684819997">
+        <div>客服咨询</div>
+        <span>云云</span> </a> </li>
+      <li> <a href="tel:18684819997">
+        <div>推广合作</div>
+        <span class="qqserver-service-alert">单单</span> </a> </li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
