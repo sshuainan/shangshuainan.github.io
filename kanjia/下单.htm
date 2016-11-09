@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title> - 玛琪特 - 国内首家微砍价平台！</title>
+<meta name="keywords" content="微砍价，玛琪特微砍价，免费的微砍价" />
+<meta name="description" content="微砍价，玛琪特微砍价，免费的微砍价" />
+
+<link href="style.css"  rel="stylesheet" type="text/css" />
+<link href="flexslider.css"  rel="stylesheet" type="text/css" />
+<link href="kanjia.css"  rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="jquery-1.7.2.min.js" ></script>
+<script type="text/javascript" src="jquery.flexslider-min.js" ></script>
+<script type="text/javascript" src="jquery.lazyload.min.js" ></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+jQuery(document).ready( 
+	function($){ 
+		$("img.lazy").lazyload({ 
+			placeholder : "/skin/default/js/grey.gif", 
+			effect      : "fadeIn",
+			threshold : 500
+		}); 
+	}); 
+
+	$('.flexslider').flexslider({
+		animation: "fade",
+  		slideDirection: "horizontal",
+		slideshow: true,
+		slideshowSpeed: 3000,
+                                directionNav: true,
+		pauseOnAction: false
+	});
+});
+</script>
+
+</head>
+<body>
+<!--<div class="top"><a href="/">玛琪特 - 国内首家微砍价平台！</a></div>-->
+<div class="c"></div>
+
+
+
+
+
+<div class="container bag">
+  
+  
+ 
+  <div class="order_form">
+  <form action="../kanjia/doaction.php" method="post" name="addform" id="addform">
+  <ul>
+  <div class="btn-title radius30">收货人信息</div>
+<li><div class="nickname radius30">收货人</div><input type="text" name="xingming" id="xingming" class="btn-input2" /></li>
+<li><div class="nickname radius30">电话</div><input type="text" name="dianhua" id="dianhua" class="btn-input2" /></li>
+<li><div class="nickname radius30">地址</div><input type="text" name="dizhi" id="dizhi" class="btn-input2" /></li>
+<input name="enews" type="hidden" id="enews" value="Order">
+<input name="fqid" type="hidden" id="fqid" value="721">
+<input name="yuanjia" type="hidden" id="yuanjia" value="">
+<input class="btn radius30" type="button" name="Submit" onclick="location.href='order.htm'"  value="提交订单">
+<ul>
+
+  </form>
+  </div>
+	<div class="c"></div>
+  <div class="content radius3">
+  <ul class="list_title">
+    
+    <li class="goods_name">商品名称</li>
+    <li class="num">数量</li>
+    <li class="yuanjia">原价</li>
+    <li class="dijia">底价</li>
+    <li class="nowprice">砍后价</li>
+    <li class="handle">操作</li>
+  </ul>
+  <div class="c"></div>
+    <ul class="goods_list">
+    
+    <li class="goods_name"><a href="/goods/maqite-goods-102.html">
+      Word天，ETM疯了！老板这次玩大啦！约砍的节奏！！      </a></li>
+    <li class="num">1件</li>
+    <li class="yuanjia">￥666</li>
+    <li class="dijia">￥1</li>
+    <li class="nowprice">￥663</li>
+    <li class="handle"><a href="#">删除</a></li>
+  </ul>
+  <div class="c"></div>
+  
+       <div class="tongji">
+<span class="yuanjia">原价:<span class="price">￥666</span></span>&nbsp;&nbsp;
+    
+    <span>砍后价:<span class="price">￥1</span></span>&nbsp;&nbsp;
+    <span>距底价还有:<span class="price">￥662</span></span>
+    
+  </div> 
+</div>
+	<div class="c"></div>
+</div>
+﻿
+<!--<div class="container qrcode">
+<ul class="radius5">
+<li class="wenzi">关注玛琪特步骤：<br />1.点击右边二维码<br />2.在微信中：识别图中二维码即可<br />3.在微信外：用微信扫一扫即可关注玛琪特啦</li>
+<li class="erweima"><a href="/skin/default/img/qrcode.jpg"><img src="/skin/default/img/qrcode.jpg" /></a></li>
+
+</ul>
+</div>-->
+<div class="c"></div>
+
+<div class="container">
+<div class="footer">
+<p>&nbsp;&nbsp;商家入驻:<a href="tel:15208928315">15208928315</a> <a href="/">玛琪特</a> 版权所有</p>
+</div>
+</div>
+<div class="container">
+<div class="bottom ">
+<ul>
+<li class="index"><a href="index.htm" ><span>砍价首页</span></a></li>
+<li><a href="wode.htm" ><span>个人中心</span></a></li>
+</ul>
+</div>
+</div>
+<div style="display:none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256343030'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1256343030' type='text/javascript'%3E%3C/script%3E"));</script></div>
+</body>
+</html>

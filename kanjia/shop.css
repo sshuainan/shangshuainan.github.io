@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*Design By maqite.com Phone:152-0892-8315 微信:ctr1688*/
+*{font-size:1.2rem;}
+@media (max-width: 320px) {
+	*{font-size:1.1rem;}
+}
+.shopinfo .gonggao { border:1px solid #eee; margin:3% 3% 0  3%;}
+.shopinfo .gonggao .title{ line-height:32px; border-bottom:1px solid #eee; background-color:#fafafa; padding-left:12px; font-size:1.4rem; border-top-left-radius:5px;border-top-right-radius:5px;}
+.shopinfo .gonggao .neirong{ line-height:18px; padding:10px; font-size:1.2rem}
+.shopinfo .gonggao ul{}
+.shopinfo .gonggao ul li{padding:7px 10px; line-height:14px; border-bottom:1px dashed #eee;}
+.shopinfo .gonggao ul li span{font-size:1.2rem;}
+.shopinfo .gonggao ul li span.userinfor{font-size:1.2rem; width:30%}
+.shopinfo .gonggao ul li span.userinfol{font-size:1.2rem;width:70%}
+@media (min-width: 768px) {
+	*{font-size:1.4rem;}
+	.shopinfo .gonggao .title{font-size:1.5rem;line-height:37px;}
+	.shopinfo .gonggao .neirong{ line-height:21px; padding:12px; font-size:1.4rem}
+	.shopinfo .btn4{ font-size:1.4rem; padding:3px 0px;}
+}
+
+/*兼容ipad结束*/

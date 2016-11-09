@@ -1,0 +1,440 @@
+@charset "utf-8";
+/*Design By maqite.com Phone:152-0892-8315 微信:ctr1688*/
+*{font-size:1.2rem;}
+
+.wode {
+	margin-top:12px;
+	border-bottom:1px solid #e8e8e8;
+	margin-bottom:-8px;
+}
+.wode dl dt {
+	border-top:1px solid #e8e8e8;
+	font-size:1.5rem;
+	background-color:#f5f5f5;
+	line-height:43px;
+	height:43px;
+	padding-left:15px;
+	color:#666
+}
+.wode dl dd a {
+	display:block;
+	font-size:1.4rem;
+
+	height:40px;
+	width:100%;
+	border-top:1px dashed #e8e8e8;
+	padding-top:10px;
+	padding-left:15px;
+	color:#777
+}
+.wode dl dd {
+}
+.wode dl dd .quan {
+	display:block;
+	float:left;
+	border:2px solid #04B7F2;
+	width:10px;
+	height:10px;
+	margin-top:6px;
+	margin-right:7px;
+}
+.login ul {
+	font-size:1.4rem;
+	margin:3% 3% -10px 3%;
+}
+.login ul li {
+	border:1px solid #eee;
+	margin-top:3%;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	border-radius:30px;
+}
+.userinfo {
+	margin-bottom:-11px;
+}
+.userinfo ul {
+	border:1px solid #eee;
+	border-bottom:0px;
+	margin:auto 3%;
+	overflow:hidden
+}
+.userinfo ul li {
+	border-bottom:1px solid #eee;
+	line-height:35px;
+	height:35px;
+	width:100%;
+}
+.userinfo ul li a {
+	font-size:1.4rem;
+}
+.userinfo ul li .item1 {
+	display:block;
+	float:left;
+	width:35%;
+	font-size:1.4rem;
+	text-align:center;
+	border-right:1px solid #eee;
+}
+.userinfo ul li .item2 {
+	display:block;
+	width:100%;
+	font-size:1.4rem;
+	text-align:center;
+}
+/*发布列表begin*/
+.infolist .title {
+	margin:3% 1.5%;
+	border:1px solid #e8e8e8;
+	overflow:hidden;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius:30px;
+}
+.infolist .title span {
+	float:left;
+	text-align:center;
+	display:block;
+	width:50%;
+	line-height:32px;
+	height:32px;
+}
+.infolist .title span a {
+	display:block;
+	width:100%;
+	font-size:1.4rem;
+}
+.infolist .title .header1 a {
+	background-color:#04B7F2;
+	color:#FFF;
+}
+.infolist .title .header2 a {
+	background-color:#04B7F2;
+	color:#FFF;
+}
+.baoqilai {
+	margin:0 1.5%;
+	border:1px solid #e8e8e8;
+	border-top:0px;
+}
+.infolist ul {
+	border-top:1px solid #e8e8e8;
+	overflow:hidden
+}
+.infolist ul li {
+	float:left;
+	font-size:1.2rem;
+	line-height:35px;
+	height:35px;
+}
+.infolist ul li a {
+	font-size:1.2rem;
+	color:#556;
+}
+.infolist ul li.mingcheng {
+	width:34%;
+	text-align:center;
+}
+.infolist ul li.fabusj {
+	width:19%;
+	text-align:center;
+}
+.infolist ul li.dianji {
+	width:9%;
+	text-align:center;
+}
+.infolist ul li.pinglun {
+	width:9%;
+	text-align:center;
+}
+.infolist ul li.shenhe {
+	width:9%;
+	text-align:center;
+}
+.infolist ul li.handle {
+	width:20%;
+	text-align:center;
+}
+.infolist ul.qubie {
+	background-color:#f5f5f5;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+/*收藏列表*/
+.favalist ul {
+	border-top:1px solid #e8e8e8;
+	overflow:hidden
+}
+.favalist ul li {
+	float:left;
+	font-size:1.2rem;
+	line-height:35px;
+	height:35px;
+}
+.favalist ul li a {
+	font-size:1.2rem;
+	color:#556;
+}
+.favalist ul li.mingcheng {
+	width:42%;
+	text-align:center;
+}
+.favalist ul li.dianji {
+	width:16%;
+	text-align:center;
+}
+.favalist ul li.shoucangsj {
+	width:26%;
+	text-align:center;
+}
+.favalist ul li.xuanze {
+	width:16%;
+	text-align:center;
+}
+.favalist ul.qubie {
+	background-color:#f5f5f5;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+.favalist  .select {
+	outline: none;
+	margin:3% 2% auto 2%;
+	width: 96%;
+	height:35px;
+	padding:4px 9px 3px 12px;
+	border:1px solid #04B7F2;
+	display: inline-block;
+	background-repeat: no-repeat;
+	appearance:button;
+	-moz-appearance:button;
+	-webkit-appearance:button;
+	font-size:1.4rem;
+	color:#04B7F2;
+	background-color:#fff;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius:30px;
+	text-align:center;
+}
+
+/*收藏分类列表*/
+.favaclass ul {
+	border-top:1px solid #e8e8e8;
+	overflow:hidden
+}
+.favaclass ul.suibian{ margin:auto 2%;}
+.favaclass ul.suibian li{ border:1px solid #eee;}
+.favaclass ul.suibian li:hover{ border:1px solid #04B7F2;}
+.favaclass ul.qubie li a {
+	font-size:1.2rem;
+	color:#556;
+}
+.favaclass ul.qubie li {
+	float:left;
+	line-height:30px; font-size:1.4rem
+}
+.favaclass ul.qubie li.iddx {
+	width:20%;
+	text-align:center;
+}
+.favaclass ul.qubie li.fenleidx {
+	width:55%;
+	text-align:center;
+}
+.favaclass ul.qubie li.caozuodx {
+	width:25%;
+	text-align:center;
+}
+
+.favaclass .baoqilai {
+	margin:3% 2%;
+}
+
+.addfava a{ font-size:1.4rem}
+.addfava form{ margin:auto 3%;}
+/*发布列表end*/
+.addinfoedit {
+	margin-bottom:-9px;
+}
+.addinfoedit .btn4 a {
+	font-size:1.4rem;
+}
+.addinfoedit ul {
+	margin:auto 3%;
+}
+.addinfoedit ul li {
+	border:1px solid #eee;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	border-radius:30px;
+	margin-top:3%;
+}
+.addinfoedit ul li:hover {
+	border:1px solid #04B7F2;
+}
+.addinfoedit .spmiaoshu p {
+	font-size:1.4rem;
+	padding-top:3%;
+	padding-bottom:3%;
+}
+.addinfoedit .spmiaoshu textarea {
+	border:1px solid #eee;
+	width:100%;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
+	font-size:1.4rem;
+	color:#666;
+	padding:7px;
+}
+.spmiaoshu p {
+	font-size:1.4rem;
+	padding-top:3%;
+	padding-bottom:3%;
+}
+.spmiaoshu textarea {
+	border:1px solid #eee;
+	width:100%;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
+	font-size:1.4rem;
+	color:#666;
+	padding:7px;
+}
+.addinfoedit ul.changeclass .select {
+	outline: none;
+	width: 100%;
+	height:40px;
+	padding:4px 9px 3px 12px;
+	border:1px solid #04B7F2;
+	display: inline-block;
+	background-repeat: no-repeat;
+	appearance:button;
+	-moz-appearance:button;
+	-webkit-appearance:button;
+	font-size:1.4rem;
+	color:#04B7F2;
+	background-color:#fff;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius:30px;
+	text-align:center;
+	margin-top:3%;
+}
+/*我的砍价列表begin*/
+.mybarg ul.list_title2{ border-top:1px solid #eee;}
+.mybarg ul.list_title2 a{ font-size:1.2rem;}
+.mybarg ul.list_title2 li{ float:left; text-align:center; font-size:1.2rem; line-height:36px;}
+.mybarg ul.kanjialist li{ float:left; text-align:center; font-size:1.2rem; background-color:#fafafa;}
+.mybarg ul.list_title2 li.faqizhe{ width:22%;}
+.mybarg ul.list_title2 li.yuanjia{ width:14%}
+
+.mybarg ul.list_title2 li.kanhoujia{ width:18%}
+.mybarg ul.list_title2 li.sydaoshu{ width:10%}
+.mybarg ul.list_title2 li.kjstate{width:36%}
+.mybarg .content{ border-top:0px solid #eee;}
+/*我的砍价列表end*/
+/*查看砍价详情页*/
+
+ .content{ margin:3%;}
+ .baginfo ul.list_title{ overflow:hidden; width:100%; line-height:40px;height:40px; font-size:1.2rem;}
+.baginfo ul.list_title li{ float:left;text-align:center;}
+.baginfo ul.list_title li.num,.baginfo ul.list_title li.yuanjia,.baginfo ul.list_title li.dijia,.baginfo ul.list_title li.nowprice,.baginfo ul.list_title li.handle{
+	
+	width:15%;
+}
+.baginfo ul.list_title li.goods_name{
+	width:24%;
+	text-align:center;
+	margin-left:1%;
+}
+.baginfo ul.list_title li.suoluetu{
+	
+}
+
+.baginfo ul.goods_list{border-top:1px dashed #eee; overflow:hidden; width:100%; line-height:40px; height:40px; font-size:1.2rem;}
+.baginfo ul.goods_list li{ float:left;text-align:center;}
+.baginfo ul.goods_list li.num,.baginfo ul.goods_list li.yuanjia,.baginfo ul.goods_list li.dijia,.baginfo ul.goods_list li.nowprice,.baginfo ul.goods_list li.handle{
+
+	width:15%;
+}
+.baginfo ul.goods_list li.goods_name{
+	width:24%;
+	text-align:center;
+	margin-left:1%;
+}
+.baginfo ul.goods_list li.suoluetu{
+	
+}
+.baginfo ul.btn_two{margin: auto 1%;}
+.baginfo ul.btn_two li{width:98%; margin-left:1%;float:left; margin-bottom:3%;}
+.baginfo ul.btn_two li a{ display:block; text-align:center;background:#04B7F2;
+ color:#fff; line-height:3.8rem;height:3.8rem;	-moz-border-radius: 30px; letter-spacing:1px;
+	-webkit-border-radius: 30px;
+	border-radius:30px; font-size:1.4rem;}
+.baginfo ul.goods_list li img{ width:18px; height:18px; margin-top:11px;}
+.baginfo .tongji{border-top:1px dashed #eee; text-align:center; background-color:#fafafa; overflow:hidden; width:100%; line-height:40px; height:40px; font-size:1.2rem;}
+/*砍价记录begin*/
+.kanjiajilu .title{ background-color:#fafafa; text-align:center; line-height:37px;font-size:1.4rem}
+.kanjiajilu ul.kanjialist li{ float:left; text-align:center; line-height:32px;}
+.kanjiajilu ul.kanjialist li.user_name{width:20%; }
+.kanjiajilu ul.kanjialist li.kandiao{width:40%;}
+.kanjiajilu ul.kanjialist li.kanhou{width:40%;}
+/*砍价记录end*/
+/*订单记录begin*/
+.order .orderlist{ margin:auto 2%;}
+.order .orderlist .item{ border:1px solid #eee; margin-top:3%;}
+.order .orderlist .item:hover{ border:1px solid #e8e8e8;}
+.order .orderlist .item .itemtitle{ background-color:#F5F5F5; border-top-left-radius:5px; border-top-right-radius:5px;line-height:37px; height:37px; padding-left:3%; padding-right:3%; }
+.order .orderlist .item .itemgoods{ line-height:35px; height:35px; padding-left:3%; padding-right:3%; border-top:1px dashed #eee;}
+.order .orderlist .item .itemgoods .biaoti{ width:56%;}
+.order .orderlist .item .itemgoods .mum{ float:right; width:44%;}
+.order .orderlist .item .itemtongji{ line-height:35px; height:35px; padding-left:3%; padding-right:3%; border-top:1px dashed #eee;}
+/*订单记录end*/
+/*收货信息b*/
+.order_info .title{ line-height:32px; border-bottom:1px dashed #e8e8e8; padding:0 3%;}
+.order_info ul{padding:3%;border-bottom:1px dashed #e8e8e8;}
+.order_info ul li{line-height:22px;}
+.order_goods_title ul.list_title3 li{ float:left;text-align:center; line-height:32px;}
+.order_goods_title ul.list_title3 li.goods_name{width:30%}
+.order_goods_title ul.list_title3 li.num{ width:17.5%}
+.order_goods_title ul.list_title3 li.yuanjia{width:17.5%}
+.order_goods_title ul.list_title3 li.dijia{width:17.5%}
+.order_goods_title ul.list_title3 li.nowprice{width:17.5%}
+
+.order_goods_title ul.goods_list3{ padding:0 3%; border-bottom:1px dashed #eee;}
+.order_goods_title ul.goods_list3 li{ float:left; text-align:center; line-height:32px;}
+.order_goods_title ul.goods_list3 li.goods_name{width:30%}
+.order_goods_title ul.goods_list3 li.num{ width:17.5%}
+.order_goods_title ul.goods_list3 li.yuanjia{width:17.5%}
+.order_goods_title ul.goods_list3 li.dijia{width:17.5%}
+.order_goods_title ul.goods_list3 li.nowprice{width:17.5%}
+/*收货信息e*/
+
+@media (max-width: 320px) {
+	*{font-size:1.2rem;}
+	.order{ font-size:1.2rem}
+}
+/*兼容ipad开始*/
+@media (min-width: 768px) {
+	.infolist .title span {
+
+	line-height:35px;
+	height:35px;
+}
+.infolist ul li {
+font-size:1.4rem;
+line-height:40px;
+height:40px;
+}
+.infolist ul li a {
+font-size:1.4rem;
+}
+.order{ font-size:1.4rem}
+.order .orderlist .item .itemtitle{ line-height:40px; height:40px;}
+.order .orderlist .item .itemgoods{ line-height:40px; height:40px; }
+.order .orderlist .item .itemtongji{ line-height:40px; height:40px; }
+
+}
+/*兼容ipad结束*/
