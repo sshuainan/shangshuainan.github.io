@@ -1,0 +1,8 @@
+title: shuainan.GitHub.io
+description: my project
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
